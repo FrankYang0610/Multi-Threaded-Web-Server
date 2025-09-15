@@ -1,0 +1,16 @@
+[Welcome] Welcome to the Multi-Threaded Web Server by YANG Xikun (Project Red-Crowned Crane)
+Server started on port 8080.
+The thread pool is successfully started.
+The server is now listening.
+127.0.0.1:51336 [Sun, 20 Apr 2025 20:27:11 GMT] "GET /longtext.txt HTTP/1.1" 200 OK (Server: 127.0.0.1:8080) 16930 bytes
+127.0.0.1:51337 [Sun, 20 Apr 2025 20:28:06 GMT] "HEAD /text.txt HTTP/1.1" 200 OK (Server: 127.0.0.1:8080) 510 bytes
+127.0.0.1:51337 [Sun, 20 Apr 2025 20:28:07 GMT] "HEAD /text.txt HTTP/1.1" 200 OK (Server: 127.0.0.1:8080) 510 bytes
+127.0.0.1:51345 [Sun, 20 Apr 2025 20:29:05 GMT] "GET ../outside HTTP/1.1" 403 Forbidden (Server: 127.0.0.1:8080) 0 bytes
+127.0.0.1:51355 [Sun, 20 Apr 2025 20:30:17 GMT] "GET /macaw.jpeg HTTP/1.1" 200 OK (Server: 127.0.0.1:8080) 2995130 bytes
+127.0.0.1:51356 [Sun, 20 Apr 2025 20:31:04 GMT] "GET /text.txt HTTP/1.1" 304 Not Modified (Server: 127.0.0.1:8080) 0 bytes
+127.0.0.1:51358 [Sun, 20 Apr 2025 20:33:04 GMT] "HEAD /nosuchfile.txt HTTP/1.1" 404 Not Found (Server: 127.0.0.1:8080) 0 bytes
+127.0.0.1:51360 [Sun, 20 Apr 2025 20:35:47 GMT] "GET /flying.pdf HTTP/1.1" 415 Unsupported Media Type (Server: 127.0.0.1:8080) 0 bytes
+127.0.0.1:51361 [Sun, 20 Apr 2025 20:37:43 GMT] "- - HTTP/-" 400 Bad Request (Server: 127.0.0.1:8080) 0 bytes
+The server is shut down. Please restart the program if you need to restart the server.
+Bye.
+

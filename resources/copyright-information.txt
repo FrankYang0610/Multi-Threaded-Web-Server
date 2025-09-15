@@ -1,0 +1,4 @@
+Copyright information
+- `flying.jpg` and `flying.pdf` contain a photo downloaded from [https://commons.wikimedia.org/wiki/File:Grus_japonensis_in_flight_at_Akan_International_Crane_Center.jpg].
+- `macaw.jpg` is a photo downloaded from [https://en.wikipedia.org/wiki/File:Ara_ararauna_Luc_Viatour.jpg].
+- Please also refer to [https://en.wikipedia.org/wiki/Red-crowned_crane].

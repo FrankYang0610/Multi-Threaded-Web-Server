@@ -1,0 +1,21 @@
+[Welcome] Welcome to the Multi-Threaded Web Server by YANG Xikun (Project Red-Crowned Crane)
+Server started on port 8080.
+The thread pool is successfully started.
+The server is now listening.
+127.0.0.1:51460 [Sun, 20 Apr 2025 20:52:31 GMT] "GET /text.txt HTTP/1.1" 200 OK (Server: 127.0.0.1:8080) 510 bytes
+[Warning] Keep-alive connection timed out.
+127.0.0.1:51463 [Sun, 20 Apr 2025 20:55:36 GMT] "OPTIONS /longtext.txt HTTP/1.1" 200 OK (Server: 127.0.0.1:8080) 0 bytes
+127.0.0.1:51463 [Sun, 20 Apr 2025 20:55:36 GMT] "HEAD /longtext.txt HTTP/1.1" 304 Not Modified (Server: 127.0.0.1:8080) 0 bytes
+[Warning] Keep-alive connection timed out.
+127.0.0.1:51465 [Sun, 20 Apr 2025 20:56:56 GMT] "GET /forbidden.txt HTTP/1.1" 403 Forbidden (Server: 127.0.0.1:8080) 0 bytes
+[Warning] Keep-alive connection timed out.
+127.0.0.1:51473 [Sun, 20 Apr 2025 20:59:05 GMT] "GET /flying.pdf HTTP/1.1" 415 Unsupported Media Type (Server: 127.0.0.1:8080) 0 bytes
+[Warning] Keep-alive connection timed out.
+127.0.0.1:51477 [Sun, 20 Apr 2025 21:02:23 GMT] "GET /nosuchfile.txt HTTP/1.1" 404 Not Found (Server: 127.0.0.1:8080) 0 bytes
+[Warning] Keep-alive connection timed out.
+127.0.0.1:51484 [Sun, 20 Apr 2025 21:05:05 GMT] "OPTIONS /macaw.jpeg HTTP/1.1" 200 OK (Server: 127.0.0.1:8080) 0 bytes
+127.0.0.1:51484 [Sun, 20 Apr 2025 21:05:05 GMT] "GET /macaw.jpeg HTTP/1.1" 200 OK (Server: 127.0.0.1:8080) 2995130 bytes
+[Warning] Keep-alive connection timed out.
+The server is shut down. Please restart the program if you need to restart the server.
+Bye.
+

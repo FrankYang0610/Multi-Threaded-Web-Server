@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi-Threaded Web Server (Client Side)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="header">
+    <h1>Multi-Threaded Web Server (Client Side)</h1>
+    <h3>Project Red-Crowned Crane</h3>
+</div>
+<p class="author">Author: Yang Xikun</p>
+<hr>
+
+<div class="panel">
+    <div class="row">
+        <div class="col-3">
+            <label for="serverIP">Server IP</label>
+            <input type="text" id="serverIP" value="127.0.0.1" placeholder="Enter the server IP address">
+        </div>
+
+        <div class="col-3">
+            <label for="serverPort">Server Port</label>
+            <input type="number" id="serverPort" value="8080" placeholder="Enter the server port">
+        </div>
+
+        <div class="col-3">
+            <label for="filePath">File Path</label>
+            <input type="text" id="filePath" value="/text.txt" placeholder="Enter file path (e.g., /text.txt)">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2">
+            <fieldset>
+                <label>
+                    Connection Type <span style="color: red;">(unavailable in browser, as the browser will automatically enable keep-alive)</span>
+                </label>
+                <div class="option-group">
+                    <label class="option">
+                        <input type="radio" name="connectionType" value="close" checked> close
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="connectionType" value="keep-alive"> keep-alive (timeout = 5s)
+                    </label>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="col-2">
+            <fieldset>
+                <label>Test If-Modified-Since feature (GMT time)</label>
+                <div class="inline-option">
+                    <label class="option">
+                        <input type="checkbox" id="enableIfModifiedSince"> Enable If-Modified-Since:
+                    </label>
+                    <input type="datetime-local" id="ifModifiedSinceDate" disabled>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</div>
+
+<div class="actions">
+    <button id="sendGetRequestButton">Send <code> HTTP GET </code> Request</button>
+    <button id="sendHeadRequestButton">Send <code> HTTP HEAD </code> Request</button>
+    <button id="sendWrongRequestButton">Send <code> HTTP WRONG </code> Request</button>
+</div>
+
+<div id="response">Response will appear here...</div>
+
+<script src="client-script.js"></script>
+</body>
+</html>
